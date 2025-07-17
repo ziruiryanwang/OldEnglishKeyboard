@@ -1,0 +1,114 @@
+% Compile with XeLaTeX
+\documentclass[11pt, openany]{book}
+\usepackage{fontspec,geometry,titlesec,tocloft}
+
+% ========== FONT SETUP ==========
+\setmainfont{EB Garamond}[
+  Ligatures = TeX,
+  Numbers   = OldStyle,
+]
+
+\renewcommand{\contentsname}{Endebyrdnes þisse Bēċ}
+
+\newfontfamily\OldEnglish[
+  Ligatures = TeX,
+]{Junicode}
+
+% ========== PAGE LAYOUT ==========
+\geometry{
+  a5paper,
+  margin=25mm,
+  includehead,
+  includefoot
+}
+
+% ========== TITLE FORMATTING ==========
+\titleformat{\chapter}[block]
+  {\centering\OldEnglish\Huge}
+  {\thechapter}
+  {1em}
+  {}
+\titlespacing*{\chapter}{0pt}{50pt}{20pt}
+
+\titleformat{\section}[block]
+  {\centering\OldEnglish\Large}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+
+% ========== TABLE OF CONTENTS ==========
+\renewcommand{\cftchapfont}{\OldEnglish}
+\renewcommand{\cftsecfont}{\OldEnglish}
+\renewcommand{\cfttoctitlefont}{\OldEnglish\Huge}
+\setcounter{tocdepth}{0}
+
+% ========== DOCUMENT STRUCTURE ==========
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\Huge\OldEnglish Ōsweald Bera}\\[1em]
+  {\Large\itshape Ingang tō Ealdum Englisċum}\\[3em]
+  {\large Colin Gorrie}
+  \vfill
+\end{titlepage}
+
+% Table of Contents
+\tableofcontents
+
+% Main Content
+\mainmatter
+
+\chapter{Ōsweald Bera}
+\section{Mildþrȳþ and hire fæder}
+On Englalande is lȳtel tūn. And on þām tūne is lȳtel hūs. And on þām hūse is lȳtel mæġden. Hēo is Mildþrȳþ. Mildþrȳþ wunaþ on þām hūse. Hire fæder wunaþ ēac þǣr. 
+
+Mildþrȳþ wile spell ġehīeran.
+
+Mildþrȳþ: ``Fæder, iċ wille spell ġehīeran!"
+
+Hire fæder: ``Iċ reċċe spell."
+
+Hwelċ spell reċep Mildþrȳþ fæder? Hire fæder reċeþ miċel speel. His nama is ``Ōsweald Bera''. And þis is þæt spell. 
+
+\section{Ōswealdes spell}
+
+On Englalande is sum holt. On þām holte is sum bera. Hwæt is on þām holte? On þām holte is sum bera. Sē bera hātte Ōsweald: Ōsweald is his nama. Ōsweald Bera wunaþ on holte. Wunaþ Ōsweald on hūse? Nese, ne wunaþ hē on hūse, ac on holte. 
+
+Hwǣr wunaþ Ōsweald Bera? Hē wunaþ on holte. Hwā wunaþ on holte? Whitodlīċe, Ōsweald Bera wunaþ þær! Hwæt is Ōsweald? Ōsweald is bera. Is Ōsweald wer? Nese, nis Ōsweald wer. Is Ōsweald mæġden? Nese, nis Osweald mæġden. Witodlīċe, Ōsweald is bera! Ōsweald is bera and hē wunaþ on holte.
+
+On Englalande is ēac sum tūn. Hwæt hātte sē tūn? Sē tūn hātte Wintanċeaster. Wintanċeaster is his nama. Wunaþ Ōsweald on Wintanċeastre? Nese, ne wunaþ Ōsweald Bera on Wintanċeaster tūne. Hē wunaþ on holte, nā on tūne. Hwā wunaþ on Wintanċeastre? Sē cyning! Sē cyning wunaþ on Wintanċeastre. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
